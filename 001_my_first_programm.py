@@ -2,28 +2,33 @@
 DataBase = {}
 
 def add_data():
-    '''add data in DataBase'''
-
-    DataBase[input("Enter new key: ")] = input("Enter new data: ")
+    '''A  Add data in DataBase'''
+    '''need to add,  key == int()'''
+    DataBase[input("Enter new number key: ")] = input("Enter new data: ")
     print_text()
     
 def search_in_data():
+    '''S '''
     print_text()
 
 def delete_data():
+    '''D '''
     print_text()
     
-def check_list_data():
+def list_key():
+    '''L '''
     print_text()
-    pass
+    
 
 def list_full_database():
+    '''F '''
     print_text()
-    pass
+    return
 
 def print_text():
-    print("If you want check your data: \nPress: [A]dd [S]earch [K]ey to the [L]ist or [Q]uit")
-
+    print("If you want check your data:")
+    print("Enter key: [A]dd key to [S]earch in the [L]ist or [E]xit")
+    
 print_text()
 
 while True:
@@ -32,13 +37,12 @@ while True:
         add_data()
     elif key == "S":
         search_in_data()
-    elif key == "Q":
-        break 
     elif key == "D":
         delete_data()
-    elif key == "F":
+    elif key == "L":
         list_full_database()
-
+    elif key == "Q":
+        break 
 
 
 
